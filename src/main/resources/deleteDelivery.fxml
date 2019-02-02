@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Delivery.DeleteDelivery">
+    <children>
+        <Label text="Удалить выделенную запись?" textFill="#1d39ee">
+            <font>
+                <Font name="Century Gothic" size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </VBox.margin>
+        </Label>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <AnchorPane prefHeight="68.0" prefWidth="175.0">
+                    <children>
+                        <Button defaultButton="true" mnemonicParsing="false" onAction="#yesDelete" style="-fx-background-color: #1d39ee;" text="Да" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+                            <font>
+                                <Font name="Century Gothic" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="73.0" prefWidth="176.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#noDelete" style="-fx-background-color: #1d39ee;" text="Нет" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>
